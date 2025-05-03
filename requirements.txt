@@ -1,6 +1,8 @@
 streamlit
 pandas
 numpy
-scikit-learn
+yfinance
 matplotlib
-seaborn
+plotly
+scikit-learn
+# Pillow # Not strictly required by the final code, but good practice if image handling might be added later
