@@ -29,7 +29,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Update the custom CSS section:
 def add_custom_styling():
     st.markdown("""
     <style>
@@ -37,7 +37,7 @@ def add_custom_styling():
         background-color: #f8f9fa;
     }
     .sidebar .sidebar-content {
-        background-color: #2c3e50;
+        background-color: #1a2639;
         color: white;
     }
     .stButton>button {
@@ -55,7 +55,7 @@ def add_custom_styling():
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #2c3e50;
+        color: #1a2639;
         font-family: 'Arial Rounded MT Bold', sans-serif;
     }
     .step-container {
@@ -66,12 +66,19 @@ def add_custom_styling():
         margin-bottom: 30px;
         border: 1px solid #e0e0e0;
     }
+    /* Improved text visibility */
+    .sidebar .stRadio label {
+        color: white !important;
+    }
+    .sidebar .stRadio [role="radiogroup"] {
+        color: white !important;
+    }
     label[data-baseweb="select"],
     label[data-testid="stWidgetLabel"] > div:first-child,
     label[data-baseweb="input"] span,
     label[data-baseweb="checkbox"] span:first-child,
     label[data-baseweb="radio"] span:first-child {
-        color: #2c3e50 !important;
+        color: #1a2639 !important;
         font-weight: 600 !important;
     }
     h4 {
@@ -88,10 +95,12 @@ def add_custom_styling():
     .st-at {
         background-color: #3498db;
     }
+    /* Error message styling */
+    .stAlert {
+        border-left: 4px solid #e74c3c;
+    }
     </style>
     """, unsafe_allow_html=True)
-
-add_custom_styling()
 
 # Initialize session state variables
 default_session_state = {
@@ -268,12 +277,32 @@ if st.sidebar.button("⚠️ Reset Application"):
 # --- Main Application Logic ---
 
 # Welcome Page
+# Update the welcome section GIF URL and text:
 if st.session_state.stage == 0:
     st.title("Welcome to QuantAnalyzer Pro 📈")
-    finance_gif_url = "https://media.giphy.com/media/LpiVeIRgrq6a2T2Qjh/giphy.gif"
-    display_gif(finance_gif_url, width=400)
+    finance_gif_url = "https://media.giphy.com/media/Y3eHflj5PjZzzt3Q7D/giphy.gif"
+    display_gif(finance_gif_url, width=600)
 
     st.markdown("""
+    ## Advanced Financial Analytics Platform
+    Transform your financial data into actionable insights with our AI-powered analysis suite:
+    
+    <div style="background-color: #f0f4f8; padding: 20px; border-radius: 10px; margin: 20px 0;">
+    <div style="color: #1a2639;">
+    ✨ <strong>Key Features:</strong><br>
+    • Multi-Source Data Integration<br>
+    • Machine Learning Forecasting<br>
+    • Professional Visualization Tools<br>
+    • Risk Analysis & Optimization
+    </div>
+    </div>
+
+    ### Getting Started
+    1. Choose data source from the sidebar (📁 Upload or 🌐 Yahoo Finance)
+    2. Follow the guided workflow steps
+    3. Generate professional reports and exports
+    """, unsafe_allow_html=True)
+    st.info("💡 Pro Tip: Start by selecting your data source from the left sidebar!")
     ## Advanced Financial Analytics Platform
     Transform your financial data into actionable insights with our AI-powered analysis suite:
     
