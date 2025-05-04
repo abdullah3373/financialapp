@@ -41,7 +41,7 @@ def add_custom_styling():
         color: white;
     }
     .stButton>button {
-        background-color: #ff6e40;
+        background-color: green;
         color: white;
         font-weight: bold;
         border-radius: 5px;
@@ -50,7 +50,7 @@ def add_custom_styling():
         transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #ff9e80;
+        background-color: green;
         transform: translateY(-2px);
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
@@ -99,7 +99,7 @@ def add_custom_styling():
      h4 {
         margin-top: 1rem;
         margin-bottom: 0.8rem;
-        color: #ff6e40; /* Accent color for H4 */
+        color: green; /* Accent color for H4 */
     }
 
     </style>
