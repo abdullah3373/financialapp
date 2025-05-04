@@ -38,7 +38,7 @@ def add_custom_styling():
     }
     .sidebar .sidebar-content {
         background-color: #2c3e50;
-        color: white;
+        color: black;
     }
     .stButton>button {
         background-color: #3498db;
