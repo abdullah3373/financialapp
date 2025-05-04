@@ -34,14 +34,14 @@ def add_custom_styling():
     st.markdown("""
     <style>
     .main {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
     .sidebar .sidebar-content {
-        background-color: #2c3e50;
-        color: black;
+        background-color: #1a2b3c;
+        color: #ffffff;
     }
     .stButton>button {
-        background-color: #3498db;
+        background-color: #4CAF50;
         color: white;
         font-weight: bold;
         border-radius: 8px;
@@ -50,16 +50,16 @@ def add_custom_styling():
         transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #2980b9;
+        background-color: #45a049;
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #2c3e50;
+        color: #1a2b3c;
         font-family: 'Arial Rounded MT Bold', sans-serif;
     }
     .step-container {
-        background-color: white;
+        background-color: #f8f9fa;
         padding: 30px;
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
@@ -71,22 +71,22 @@ def add_custom_styling():
     label[data-baseweb="input"] span,
     label[data-baseweb="checkbox"] span:first-child,
     label[data-baseweb="radio"] span:first-child {
-        color: #2c3e50 !important;
+        color: #1a2b3c !important;
         font-weight: 600 !important;
     }
     h4 {
-        color: #3498db;
-        border-bottom: 2px solid #3498db;
+        color: #2c3e50;
+        border-bottom: 2px solid #4CAF50;
         padding-bottom: 4px;
     }
     .stProgress > div > div > div {
-        background-color: #3498db;
+        background-color: #4CAF50;
     }
     .st-bb {
         background-color: white;
     }
     .st-at {
-        background-color: #3498db;
+        background-color: #4CAF50;
     }
     </style>
     """, unsafe_allow_html=True)
