@@ -284,7 +284,7 @@ if st.sidebar.button("⚠️ Reset Application"):
 # Welcome Page
 if st.session_state.stage == 0:
     st.title("Welcome to QuantAnalyzer Pro 📈")
-    finance_gif_url = "https://media.giphy.com/media/Lmbdr7Fg9YhpyP5C1k/giphy.gif"  # Updated working GIF
+    finance_gif_url = "https://foundr.com/wp-content/uploads/2020/02/image5-1.gif"  # Updated working GIF
     display_gif(finance_gif_url, width=600)
 
     st.markdown("""
