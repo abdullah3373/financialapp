@@ -34,60 +34,74 @@ def add_custom_styling():
     st.markdown("""
     <style>
     .main {
-        background-color: #ffffff;
+        background-color: #f0f2f6;
     }
     .sidebar .sidebar-content {
         background-color: #1e3d59;
         color: white;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: #ff6e40;
         color: white;
         font-weight: bold;
-        border-radius: 8px;
-        padding: 12px 18px;
+        border-radius: 5px;
+        padding: 10px 15px;
         border: none;
         transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #45a049;
+        background-color: #ff9e80;
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
-    h1, h2, h3, h4, h5, h6 {
-        color: #1a2b3c;
-        font-family: 'Arial Rounded MT Bold', sans-serif;
+    h1, h2, h3, h4, h5, h6 { /* Target all headers */
+        color: #1e3d59;
+        font-weight: bold; /* Make headers bolder */
     }
     .step-container {
-        background-color: #f8f9fa;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
-        border: 1px solid #e0e0e0;
-    }
-    label[data-baseweb="select"],
-    label[data-testid="stWidgetLabel"] > div:first-child,
-    label[data-baseweb="input"] span,
-    label[data-baseweb="checkbox"] span:first-child,
-    label[data-baseweb="radio"] span:first-child {
-        color: #1a2b3c !important;
-        font-weight: 600 !important;
-    }
-    h4 {
-        color: #2c3e50;
-        border-bottom: 2px solid #4CAF50;
-        padding-bottom: 4px;
-    }
-    .stProgress > div > div > div {
-        background-color: #4CAF50;
-    }
-    .st-bb {
         background-color: white;
+        padding: 25px; /* Increased padding */
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Enhanced shadow */
+        margin-bottom: 25px; /* Increased margin */
+        border: 1px solid #e0e0e0; /* Subtle border */
     }
-    .st-at {
-        background-color: #4CAF50;
+    /* Style selectbox labels */
+    label[data-baseweb="select"] {
+        color: #1e3d59 !important;
+        font-weight: bold !important;
     }
+    /* Style slider labels */
+     label[data-testid="stWidgetLabel"] > div:first-child {
+        color: #1e3d59 !important;
+        font-weight: bold !important;
+    }
+    /* Style text input labels */
+    label[data-baseweb="input"] {
+         color: #1e3d59 !important;
+         font-weight: bold !important;
+    }
+     /* Style checkbox labels */
+    label[data-baseweb="checkbox"] span:first-child {
+          color: #1e3d59 !important;
+         font-weight: bold !important;
+    }
+     /* Style radio labels */
+     label[data-baseweb="radio"] span:first-child {
+          color: #1e3d59 !important;
+         font-weight: bold !important;
+    }
+    /* Add some breathing room after subheaders */
+    h3 {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+     h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        color: #ff6e40; /* Accent color for H4 */
+    }
+
     </style>
     """, unsafe_allow_html=True)
 
