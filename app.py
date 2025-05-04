@@ -37,8 +37,8 @@ def add_custom_styling():
         background-color: #ffffff;
     }
     .sidebar .sidebar-content {
-        background-color: #1a2b3c;
-        color: #ffffff;
+        background-color: #1e3d59;
+        color: white;
     }
     .stButton>button {
         background-color: #4CAF50;
@@ -270,8 +270,8 @@ if st.sidebar.button("⚠️ Reset Application"):
 # Welcome Page
 if st.session_state.stage == 0:
     st.title("Welcome to QuantAnalyzer Pro 📈")
-    finance_gif_url = "https://media.giphy.com/media/Y3eHflj5PjZzzt3Q7D/giphy.gif"
-    display_gif(finance_gif_url, width=400)
+    finance_gif_url = "https://media.giphy.com/media/Lmbdr7Fg9YhpyP5C1k/giphy.gif"  # Updated working GIF
+    display_gif(finance_gif_url, width=600)
 
     st.markdown("""
     ## Advanced Financial Analytics Platform
